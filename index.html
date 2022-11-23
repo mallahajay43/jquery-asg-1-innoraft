@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery-asg-1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- internal css-style -->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            padding: 60px;
+            margin: 0;
+        }
+        p{
+            font-size: large;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .btn{
+            margin: 20px 0px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- html code -->
+    <div class="box"></div>
+    <p>Hide the red box on click</p>
+    <button class="btn">click me</button>
+
+    <!-- script -->
+    <script>
+        $(".btn").click(()=>{
+            $(".box").hide();
+        })
+    </script>
+
+</body>
+</html>
